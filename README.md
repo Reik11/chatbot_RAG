@@ -1,8 +1,8 @@
 cara nge run 
 
-git clone https://github.com/USERNAME/rag-kecantikan.git
+git clone https://github.com/Reik11/chatbot_RAG.git
 
-cd rag-kecantikan4
+cd chatbbot_RAG
 
 python -m venv venv
 
@@ -10,6 +10,16 @@ venv\Scripts\activate
 
 pip install -r requirements.txt
 
-python app.py
+python scraper/scrape_id.py
 
-ollama 3.2:3b
+python vector_store.py
+
+VERSI ollama 3.2:3b
+
+https://ollama.com/download
+
+ollama pull llama3.2
+
+ollama run llama3.2
+
+python app.py
